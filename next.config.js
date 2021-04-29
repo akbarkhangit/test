@@ -21,6 +21,11 @@ module.exports = (phase, { defaultConfig }) => {
     });
 };
 
+// module.exports = {
+//     target: 'serverless',
+//     // Other options
+// };
+
 
     // next.config.js
     // const withCSS = require('@zeit/next-css');
