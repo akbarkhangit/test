@@ -1,0 +1,98 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import Subsection from '../Layout/Subsection';
+import IntroPie from '../Visualizations/IntroPie';
+
+
+const Intro = ({ toggleExpandedSubsection }) => (
+  <Subsection
+    isRow={false}
+    disableSticky
+    toggleExpandedSubsection={toggleExpandedSubsection}
+    vis={(
+      <IntroPie />
+    )
+
+
+    }
+    headingText="THE HIGH COST OF PUNITIVE CITY POLICIES"
+    subHeadingText="How Our Public Complaint-Driven System Leads to Serial Street Evictions, Arrests, Fines, and Raises the Barriers to Re-entering Stable Housing"
+    visableText={(
+      <div className="paragraph-container">
+        <div className="paragraph">
+          While it is not a crime to be homeless, our city and state have established
+{' '}
+          <strong>224 laws</strong>
+          {' '}
+          <strong>that inhibit those living on the streets from performing necessary life-sustaining activities in the public spaces, including: erecting a tent, covering possessions with a tarp, sleeping, washing, caring for one's body, or relieving oneself outdoors. </strong>
+          Retail stores, eateries, and offices exclude neighbors experiencing houselessness from using indoor bathrooms and showers that they offer to housed Portlanders (
+<em>Hawash, Goes Behind, Kimball, 2016; </em>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.oregonlive.com/portland/index.ssf/2017/03/report_portland_lacks_sufficie.html"><em>Harbarger, 01/15/2018</em></a>
+          <em>; </em>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.koin.com/news/homeless-hygiene-survey-finds-need-for-facilities/870115341"><em>Wicks, 03/03/2017</em></a>
+          <em>)</em>
+          . Likewise, the City of Portland offers no reliable waste pick-up services to those who live on the streets, yet may fine houseless neighbors for the household waste they and housed individuals dispose of in nearby public places
+{' '}
+          <em>(</em>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.kgw.com/article/news/local/homeless/how-to-clean-up-garbage-at-homeless-camps-thats-a-question-metro-is-trying-to-answer/283-614297177"><em>Dooris, 11/13/2018</em></a>
+          <em>; </em>
+          <a rel="noopener noreferrer" target="_blank" href="https://news.streetroots.org/2018/11/09/unpaid-fine-poorer-you-are-more-you-owe"><em>Green, 11/9/2018</em></a>
+          <em>)</em>
+          .
+        </div>
+      </div>
+    )}
+    expandedText={(
+      <div className="paragraph-container">
+        <div className="paragraph">
+          We believe those living unsheltered should be allowed by law to create a shelter that keeps them warm, dry, and safe and provides a minimum of privacy
+<strong />
+          <em> (</em>
+          <a rel="noopener noreferrer" target="_blank" href="https://aclu-or.org/sites/default/files/field_documents/aclu-decriminalizing-homelessness_full-report_web_final.pdf"><em>ACLU Oregon, 2017</em></a>
+          <em>)</em>
+          .
+{' '}
+        </div>
+
+        <div className="paragraph">
+          Together these laws and customs encourage housed residents to view the life-sustaining activities of houseless neighbors as crimes rather than as a rational response to systematic exclusion. The City has dramatically increased the number of serial property seizures and camp evictions, euphemistically referred to as "sweeps," and which we call "sweep-evictions." Likewise, the Portland Police department has increased its interactions, ticketing, and arrests of houseless folks at a much higher rate than housed people
+{' '}
+          <em>(</em>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.oregonlive.com/expo/news/erry-2018/06/79b61635fd4450/portland_homeless_arrests_data.html"><em>Lewis & Woolington, 06/29/2018</em></a>
+          ;
+          {' '}
+          <a rel="noopener noreferrer" target="_blank" href="https://www.oregonlive.com/portland/index.ssf/2018/06/portland_homeless_accounted_fo.html">Lewis & Woolington 06/27/2018</a>
+          <em>).</em>
+        </div>
+
+        <div className="paragraph">
+          The result is that the City is now spending large amounts of money over-policing and sweep-evicting. Indeed, a 2018 study estimates that
+{' '}
+          <strong>above and beyond the $1,238,868.00 spent annually on campsite clean </strong>
+          up costs, the City of Portland is spending
+{' '}
+          <strong>an additional $3,579,438.00 in reallocated personnel costs </strong>
+          because the employees are redirecting time to dealing with the aftermath sweep-evictions
+{' '}
+          <em>(Evans & Lindsay, 2018)</em>
+          <strong>. </strong>
+          Park rangers, police, firefighters, and other city personnel are often called upon to mediate situations between housed and unhoused neighbors and respond to the trauma generated by sweep-evictions. Sweep-evictions are ineffectual because evicting, fining, and jailing people for activities they
+{' '}
+          <em>must carry out and have nowhere else to do so</em>
+          {' '}
+          exponentially raises the barriers to re-entering stable housing.
+        </div>
+
+        <div className="paragraph">Below, we explore the data that reveals the magnitude of barriers that unhoused Portlanders face as a result of city policies and over-policing, as well as private sector and public practices and customs preventing them from accessing city water, sewer, and waste disposal services the rest of us take for granted.</div>
+      </div>
+    )}
+  />
+);
+
+
+Intro.propTypes = {
+  toggleExpandedSubsection: PropTypes.func,
+};
+
+
+export default Intro;

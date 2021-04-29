@@ -1,0 +1,21 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "moment": "^2.22.2",
+    "next": "7.0.2",
+    "prop-types": "^15.6.2",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-progressive-image": "^0.6.0",
+    "react-select": "^2.1.2",
+    "react-sticky": "^6.0.3",
+    "smoothscroll-polyfill": "^0.4.3",
+    "victory": "^31.0.1"
+  }
+}
